@@ -13,7 +13,7 @@ mali_drv_la_LDFLAGS = -module -avoid-version -L$(MALI_DDK)/lib -lpixman-1 -lUMP 
 mali_drv_ladir = @moduledir@/drivers
 
 AM_CFLAGS = @XORG_CFLAGS@ \
-	-I/usr/include/drm \
+	-I/usr/include/libdrm \
 	-I$(MALI_DDK)/include \
 	-I$(MALI_DDK)/internal/include/khronos \
 	-I$(MALI_DDK)/src/ump/include \
